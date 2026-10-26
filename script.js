@@ -140,3 +140,22 @@ if (!reduceMotion) {
   for (let i = 0; i < 9; i++) setTimeout(createPetal, i * 350);
   setInterval(createPetal, 950);
 }
+
+
+const intro = document.getElementById("envelope-intro");
+const openEnvelope = document.getElementById("open-envelope");
+const openPrompt = document.getElementById("open-prompt");
+
+function openInvitation() {
+  if (intro.classList.contains("opening")) return;
+
+  intro.classList.add("opening");
+
+  window.setTimeout(() => {
+    intro.classList.add("is-open");
+    document.body.style.overflow = "";
+  }, 1100);
+}
+
+openEnvelope.addEventListener("click", openInvitation);
+openPrompt.addEventListener("click", openInvitation);
