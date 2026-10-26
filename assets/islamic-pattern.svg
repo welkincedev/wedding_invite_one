@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <pattern id="islamicGrid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M40 0 L48 16 L64 16 L52 28 L56 44 L40 36 L24 44 L28 28 L16 16 L32 16 Z" 
+            fill="none" stroke="#b99a5d" stroke-width="0.7" opacity="0.18"/>
+      <path d="M0 40 L8 56 L24 56 L12 68 L16 84 L0 76 L-16 84 L-12 68 L-24 56 L-8 56 Z" 
+            fill="none" stroke="#b99a5d" stroke-width="0.7" opacity="0.18"/>
+      <path d="M80 40 L88 56 L104 56 L92 68 L96 84 L80 76 L64 84 L68 68 L56 56 L72 56 Z" 
+            fill="none" stroke="#b99a5d" stroke-width="0.7" opacity="0.18"/>
+      <circle cx="40" cy="40" r="1.5" fill="#b99a5d" opacity="0.25"/>
+      <circle cx="0" cy="0" r="1.5" fill="#b99a5d" opacity="0.25"/>
+      <circle cx="80" cy="0" r="1.5" fill="#b99a5d" opacity="0.25"/>
+      <circle cx="0" cy="80" r="1.5" fill="#b99a5d" opacity="0.25"/>
+      <circle cx="80" cy="80" r="1.5" fill="#b99a5d" opacity="0.25"/>
+    </pattern>
+  </defs>
+  <rect width="80" height="80" fill="url(#islamicGrid)"/>
+</svg>
