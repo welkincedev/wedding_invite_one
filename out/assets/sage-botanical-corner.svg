@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" fill="none">
+  <!-- Top-left organic botanical branch in Sage and Champagne Gold -->
+  <g opacity="0.92">
+    <!-- Main curving stem -->
+    <path d="M 12 148 C 24 105, 52 58, 148 12" stroke="#74866D" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M 38 98 C 65 82, 95 62, 130 48" stroke="#74866D" stroke-width="1.2" stroke-linecap="round" opacity="0.75"/>
+    <path d="M 22 130 C 48 124, 78 114, 104 96" stroke="#74866D" stroke-width="1.2" stroke-linecap="round" opacity="0.75"/>
+
+    <!-- Sage Leaves -->
+    <path d="M 52 58 C 44 42, 58 28, 70 34 C 74 46, 62 58, 52 58 Z" fill="#74866D" opacity="0.85"/>
+    <path d="M 85 36 C 82 20, 98 12, 108 20 C 110 32, 96 40, 85 36 Z" fill="#74866D" opacity="0.9"/>
+    <path d="M 118 20 C 122 6, 138 6, 144 16 C 140 26, 126 28, 118 20 Z" fill="#74866D"/>
+
+    <path d="M 40 82 C 26 76, 24 60, 36 56 C 48 60, 48 74, 40 82 Z" fill="#889B80" opacity="0.8"/>
+    <path d="M 68 76 C 62 62, 74 50, 84 56 C 88 66, 78 78, 68 76 Z" fill="#74866D" opacity="0.85"/>
+    <path d="M 96 56 C 98 42, 112 36, 120 44 C 118 56, 106 62, 96 56 Z" fill="#889B80" opacity="0.8"/>
+
+    <path d="M 30 114 C 18 112, 14 98, 24 92 C 34 94, 38 106, 30 114 Z" fill="#74866D" opacity="0.75"/>
+    <path d="M 58 106 C 54 94, 66 84, 76 88 C 78 98, 70 108, 58 106 Z" fill="#74866D" opacity="0.8"/>
+    <path d="M 84 92 C 88 80, 102 76, 108 84 C 106 94, 94 98, 84 92 Z" fill="#889B80" opacity="0.85"/>
+
+    <!-- Champagne Gold delicate accents & berries -->
+    <circle cx="62" cy="48" r="2.2" fill="#C6AD76"/>
+    <circle cx="92" cy="30" r="2.2" fill="#C6AD76"/>
+    <circle cx="126" cy="14" r="2.5" fill="#C6AD76"/>
+    <circle cx="48" cy="74" r="2" fill="#C6AD76"/>
+    <circle cx="78" cy="68" r="2" fill="#C6AD76"/>
+    <circle cx="42" cy="102" r="1.8" fill="#C6AD76"/>
+    <circle cx="72" cy="98" r="1.8" fill="#C6AD76"/>
+
+    <!-- Subtle gold leaf accents -->
+    <path d="M 134 32 C 142 24, 152 28, 148 38 C 142 42, 134 38, 134 32 Z" fill="#C6AD76" opacity="0.85"/>
+    <path d="M 106 70 C 114 62, 124 66, 120 76 C 114 80, 106 76, 106 70 Z" fill="#C6AD76" opacity="0.8"/>
+  </g>
+</svg>

@@ -110,8 +110,8 @@ export default function WeddingPage() {
         <div
           role="status"
           aria-live="polite"
-          className="fixed bottom-7 left-1/2 -translate-x-1/2 z-[10000] px-5 py-2.5 rounded-full text-xs sm:text-sm font-medium text-white border border-[#d4a755] shadow-2xl backdrop-blur-md animate-in fade-in slide-in-from-bottom-3 duration-300"
-          style={{ background: "rgba(45, 6, 10, 0.94)" }}
+          className="fixed bottom-7 left-1/2 -translate-x-1/2 z-[10000] px-5 py-2.5 rounded-full text-xs sm:text-sm font-medium text-white border border-[#C6AD76] shadow-2xl backdrop-blur-md animate-in fade-in slide-in-from-bottom-3 duration-300"
+          style={{ background: "rgba(52, 60, 50, 0.96)" }}
         >
           {toastMessage}
         </div>

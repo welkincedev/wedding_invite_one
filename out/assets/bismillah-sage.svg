@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 110" width="100%" height="auto">
+  <defs>
+    <linearGradient id="sageCallig" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#475244"/>
+      <stop offset="35%" stop-color="#343C32"/>
+      <stop offset="65%" stop-color="#343C32"/>
+      <stop offset="100%" stop-color="#475244"/>
+    </linearGradient>
+  </defs>
+  <text x="250" y="72" text-anchor="middle" font-family="'Amiri', 'Traditional Arabic', 'Scheherazade New', 'Noto Naskh Arabic', serif" font-size="52" fill="url(#sageCallig)" font-weight="bold" letter-spacing="1">
+    بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
+  </text>
+</svg>

@@ -1,22 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
   <defs>
-    <radialGradient id="bgGrad" cx="35%" cy="30%" r="70%">
-      <stop offset="0%" stop-color="#801c27" />
-      <stop offset="60%" stop-color="#540f17" />
-      <stop offset="100%" stop-color="#36080d" />
+    <radialGradient id="favBg" cx="40%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#889B80" />
+      <stop offset="60%" stop-color="#74866D" />
+      <stop offset="100%" stop-color="#343C32" />
     </radialGradient>
-    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f6dfb3" />
-      <stop offset="35%" stop-color="#d4af67" />
-      <stop offset="70%" stop-color="#aa823a" />
-      <stop offset="100%" stop-color="#f0d59e" />
+    <linearGradient id="favGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F6DFB3" />
+      <stop offset="50%" stop-color="#C6AD76" />
+      <stop offset="100%" stop-color="#9E854E" />
     </linearGradient>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.35"/>
-    </filter>
   </defs>
-  <circle cx="32" cy="32" r="30" fill="url(#bgGrad)" filter="url(#shadow)"/>
-  <circle cx="32" cy="32" r="26.5" fill="none" stroke="url(#goldGrad)" stroke-width="1.2" stroke-dasharray="1.5 2.5"/>
-  <circle cx="32" cy="32" r="24.5" fill="none" stroke="url(#goldGrad)" stroke-width="0.8"/>
-  <text x="32" y="37" font-family="'Cormorant Garamond', 'Playfair Display', Georgia, serif" font-size="18" font-weight="600" fill="url(#goldGrad)" text-anchor="middle" letter-spacing="1">A&amp;S</text>
+  <circle cx="32" cy="32" r="30" fill="url(#favBg)"/>
+  <circle cx="32" cy="32" r="26.5" fill="none" stroke="url(#favGold)" stroke-width="1.2" stroke-dasharray="1.5 2.5"/>
+  <circle cx="32" cy="32" r="24.5" fill="none" stroke="url(#favGold)" stroke-width="0.8"/>
+  <text x="32" y="37" font-family="'Cormorant Garamond', Georgia, serif" font-size="18" font-weight="600" fill="url(#favGold)" text-anchor="middle" letter-spacing="1">A×S</text>
 </svg>

@@ -78,18 +78,18 @@ export default function SharingBar({ onShowToast, onAddToCalendar }: SharingBarP
           className="max-w-[620px] mx-auto"
         >
           <p
-            className="text-xs tracking-[0.28em] text-[#b98c39] font-semibold mb-2"
+            className="text-xs tracking-[0.28em] text-[#C6AD76] font-semibold mb-2"
             style={{ fontFamily: "var(--font-display)" }}
           >
             SPREAD THE JOY
           </p>
           <h2
-            className="text-3xl sm:text-5xl font-normal text-[#5a121d] leading-tight mb-2"
+            className="text-3xl sm:text-5xl font-normal text-[#343C32] leading-tight mb-2"
             style={{ fontFamily: "var(--font-serif)" }}
           >
             Share this Invitation
           </h2>
-          <p className="text-xs sm:text-sm text-[#78655d] mb-6">
+          <p className="text-xs sm:text-sm text-[#817E72] mb-6">
             Pass along the celebration details with relatives, loved ones, and friends.
           </p>
 
@@ -97,18 +97,18 @@ export default function SharingBar({ onShowToast, onAddToCalendar }: SharingBarP
             <button
               type="button"
               onClick={handleNativeShare}
-              className="btn btn-luxury-burgundy"
+              className="btn btn-sage-primary"
             >
-              <Share2 className="w-4 h-4 text-[#d4a755]" />
+              <Share2 className="w-4 h-4 text-[#C6AD76]" />
               <span>Share Invitation</span>
             </button>
 
             <button
               type="button"
               onClick={handleCopyLink}
-              className="btn btn-luxury-gold"
+              className="btn btn-ivory-outline"
             >
-              <LinkIcon className="w-4 h-4 text-[#b98c39]" />
+              <LinkIcon className="w-4 h-4 text-[#74866D]" />
               <span>Copy Link</span>
             </button>
 
@@ -125,9 +125,9 @@ export default function SharingBar({ onShowToast, onAddToCalendar }: SharingBarP
             <button
               type="button"
               onClick={onAddToCalendar}
-              className="btn bg-[#fffdfa] text-[#5a121d] border border-[#d4a755] hover:bg-white"
+              className="btn btn-ivory-outline"
             >
-              <Calendar className="w-4 h-4 text-[#b98c39]" />
+              <Calendar className="w-4 h-4 text-[#C6AD76]" />
               <span>Add to Calendar</span>
             </button>
           </div>

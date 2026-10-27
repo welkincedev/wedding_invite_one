@@ -18,7 +18,7 @@ export default function AudioPlayer({ onShowToast, autoPlayTrigger }: AudioPlaye
       handlePlay(true);
     }
   }, [autoPlayTrigger]);
-
+  
   const handlePlay = async (soft = false) => {
     if (!audioRef.current) return;
     try {
@@ -59,19 +59,19 @@ export default function AudioPlayer({ onShowToast, autoPlayTrigger }: AudioPlaye
         aria-label={isPlaying ? "Pause background music" : "Play background music"}
         className={`inline-flex items-center gap-2.5 px-4 py-2.5 rounded-full text-xs font-semibold tracking-wider transition-all shadow-md backdrop-blur-md ${
           isPlaying
-            ? "bg-white/95 text-[#5a121d] border border-[#d4a755] ring-2 ring-[#d4a755]/20 shadow-lg"
-            : "bg-[#fffdfa]/90 text-[#460d14] border border-[#d4a755]/50 hover:bg-white"
+            ? "bg-[#FFFEFA]/95 text-[#343C32] border border-[#C6AD76] ring-2 ring-[#C6AD76]/30 shadow-lg"
+            : "bg-[#F7F3E9]/90 text-[#343C32] border border-[#C6AD76]/50 hover:bg-[#FFFEFA]"
         }`}
       >
-        <span className="w-5 h-5 flex items-center justify-center text-[#b98c39]">
+        <span className="w-5 h-5 flex items-center justify-center text-[#C6AD76]">
           {isPlaying ? (
             <span className="flex items-end gap-[2px] h-3.5">
-              <span className="w-[2.5px] h-full bg-[#5a121d] rounded animate-[pulse_0.8s_ease-in-out_infinite]" />
-              <span className="w-[2.5px] h-2/3 bg-[#5a121d] rounded animate-[pulse_1.1s_ease-in-out_infinite]" />
-              <span className="w-[2.5px] h-4/5 bg-[#5a121d] rounded animate-[pulse_0.9s_ease-in-out_infinite]" />
+              <span className="w-[2.5px] h-full bg-[#74866D] rounded animate-[pulse_0.8s_ease-in-out_infinite]" />
+              <span className="w-[2.5px] h-2/3 bg-[#74866D] rounded animate-[pulse_1.1s_ease-in-out_infinite]" />
+              <span className="w-[2.5px] h-4/5 bg-[#74866D] rounded animate-[pulse_0.9s_ease-in-out_infinite]" />
             </span>
           ) : (
-            <Music2 className="w-4 h-4" />
+            <Music2 className="w-4 h-4 text-[#74866D]" />
           )}
         </span>
         <span className="text-[0.75rem]">{isPlaying ? "Pause Ambience" : "Play Ambience"}</span>

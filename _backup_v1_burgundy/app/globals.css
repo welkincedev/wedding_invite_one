@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Royal Burgundy Palette */
+  --burgundy-900: #2d060a;
+  --burgundy-800: #460d14;
+  --burgundy-700: #5a121d;
+  --burgundy-600: #741b27;
+  --burgundy-500: #8e2330;
+  --burgundy-100: #fbf0f1;
+
+  /* Antique Gold & Champagne Palette */
+  --gold-100: #fff7e6;
+  --gold-200: #f6dfb3;
+  --gold-300: #e5c382;
+  --gold-400: #d4a755;
+  --gold-500: #b98c39;
+  --gold-600: #936b23;
+
+  /* Warm Ivory & Paper Palette */
+  --ivory-50: #fffdfa;
+  --ivory-100: #faf6f0;
+  --ivory-200: #f4ece2;
+  --ivory-300: #eaded0;
+  --blush-100: #f7ebe6;
+  --blush-200: #eed5cc;
+
+  /* Typography Colors */
+  --color-ink: #2b1f1c;
+  --color-ink-soft: #4e3c36;
+  --color-muted: #78655d;
+  --color-muted-light: #9d8b83;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(70, 13, 20, 0.06);
+  --shadow-md: 0 8px 24px rgba(70, 13, 20, 0.09);
+  --shadow-lg: 0 16px 40px rgba(70, 13, 20, 0.14);
+  --shadow-xl: 0 24px 60px rgba(45, 6, 10, 0.22);
+  --shadow-gold: 0 4px 20px rgba(212, 167, 85, 0.28);
+
+  /* Fonts */
+  --font-serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-display: "Cinzel", "Cormorant Garamond", serif;
+  --font-sans: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-arabic: "Amiri", "Traditional Arabic", "Scheherazade New", serif;
+  --font-script: "Alex Brush", cursive;
+
+  /* Layout */
+  --container-max: 1040px;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--ivory-100);
+  background-image: 
+    radial-gradient(circle at 50% 20%, rgba(255, 253, 250, 0.96), rgba(250, 246, 240, 0.85) 50%, rgba(234, 222, 208, 0.65) 100%),
+    url("/assets/paper-texture.webp");
+  background-attachment: fixed;
+  background-size: cover;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, input, select, textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Accessible focus outlines */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--gold-400);
+  outline-offset: 3px;
+}
+
+/* Utilities */
+.container-standard {
+  width: min(100% - 36px, var(--container-max));
+  margin-inline: auto;
+}
+
+.section-padding {
+  padding-block: clamp(65px, 9vw, 110px);
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 26px;
+  border-radius: 999px;
+  font-size: 0.84rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  transition: all 0.28s cubic-bezier(0.2, 0.8, 0.2, 1);
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn-luxury-burgundy {
+  background: linear-gradient(135deg, var(--burgundy-700) 0%, var(--burgundy-900) 100%);
+  color: #ffffff;
+  border: 1px solid var(--gold-400);
+  box-shadow: 0 6px 18px rgba(70, 13, 20, 0.22);
+}
+
+.btn-luxury-burgundy:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(70, 13, 20, 0.32);
+  border-color: var(--gold-200);
+  color: var(--gold-100);
+}
+
+.btn-luxury-gold {
+  background: rgba(255, 253, 250, 0.95);
+  color: var(--burgundy-800);
+  border: 1px solid var(--gold-400);
+  box-shadow: 0 4px 14px rgba(70, 13, 20, 0.08);
+}
+
+.btn-luxury-gold:hover {
+  transform: translateY(-2px);
+  background: #ffffff;
+  border-color: var(--gold-500);
+  color: var(--burgundy-900);
+  box-shadow: 0 8px 20px rgba(70, 13, 20, 0.14);
+}
+
+.btn-card-map {
+  width: 100%;
+  background: var(--ivory-50);
+  color: var(--burgundy-800);
+  border: 1px solid rgba(212, 167, 85, 0.6);
+  font-size: 0.8rem;
+  padding: 11px 18px;
+}
+
+.btn-card-map:hover {
+  background: var(--burgundy-800);
+  color: #ffffff;
+  border-color: var(--burgundy-800);
+}
+
+/* Falling Rose Petals */
+.petal-element {
+  position: absolute;
+  top: -25px;
+  pointer-events: none;
+  background: radial-gradient(circle at 30% 30%, #a32230, #540f17 80%);
+  border-radius: 75% 15% 75% 15%;
+  opacity: 0.65;
+  filter: drop-shadow(0 2px 5px rgba(84, 15, 23, 0.25));
+  animation: petalFall linear forwards;
+}
+
+@keyframes petalFall {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg) scale(0.85);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.6;
+  }
+  85% {
+    opacity: 0.55;
+  }
+  100% {
+    transform: translateY(105vh) translateX(var(--drift-x, 80px)) rotate(var(--rot, 360deg)) scale(1.1);
+    opacity: 0;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .petal-canvas-layer {
+    display: none !important;
+  }
+}

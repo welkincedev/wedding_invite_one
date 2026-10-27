@@ -3,9 +3,9 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("http://localhost:3000"),
-  title: "Aleena Siyad & Siyad T N — Nikah Wedding Invitation",
+  title: "Aleena Siyad & Siyad T N — The Sage Heirloom Wedding Invitation",
   description:
-    "Together with their families, Aleena Siyad & Siyad T N cordially invite you to celebrate their Nikah ceremony on Sunday, 13 December 2026 (04 Rajab 1448 AH).",
+    "Together with their families, Aleena Siyad & Siyad T N cordially invite you to celebrate their Nikah ceremony on Sunday, 13 December 2026.",
   authors: [{ name: "found.bin" }],
   icons: {
     icon: "/assets/favicon.svg",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#5a121d",
+  themeColor: "#343C32",
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover"
