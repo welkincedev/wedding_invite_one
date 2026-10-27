@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 40" width="100%" height="auto">
+  <defs>
+    <linearGradient id="divGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c5a467" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#c5a467" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#dfc288"/>
+      <stop offset="75%" stop-color="#c5a467" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#c5a467" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- Main horizontal divider line -->
+  <line x1="20" y1="20" x2="165" y2="20" stroke="url(#divGold)" stroke-width="1.2"/>
+  <line x1="235" y1="20" x2="380" y2="20" stroke="url(#divGold)" stroke-width="1.2"/>
+
+  <!-- Left flourish -->
+  <path d="M 130 20 Q 150 14, 165 20 Q 150 26, 130 20" fill="none" stroke="#c5a467" stroke-width="0.8" opacity="0.8"/>
+  <circle cx="120" cy="20" r="1.5" fill="#c5a467"/>
+  <circle cx="105" cy="20" r="1" fill="#c5a467" opacity="0.6"/>
+
+  <!-- Right flourish -->
+  <path d="M 270 20 Q 250 14, 235 20 Q 250 26, 270 20" fill="none" stroke="#c5a467" stroke-width="0.8" opacity="0.8"/>
+  <circle cx="280" cy="20" r="1.5" fill="#c5a467"/>
+  <circle cx="295" cy="20" r="1" fill="#c5a467" opacity="0.6"/>
+
+  <!-- Center motif -->
+  <g transform="translate(200, 20)">
+    <polygon points="0,-9 6,-3 9,0 6,3 0,9 -6,3 -9,0 -6,-3" fill="#c5a467"/>
+    <circle cx="0" cy="0" r="2.2" fill="#fffdf9"/>
+    <circle cx="-14" cy="0" r="1.8" fill="#c5a467"/>
+    <circle cx="14" cy="0" r="1.8" fill="#c5a467"/>
+  </g>
+</svg>

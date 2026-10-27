@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#5a121d" />
+
+  <!-- Primary Meta Tags -->
+  <title>Aleena Siyad &amp; Siyad T N — Nikah Wedding Invitation</title>
+  <meta name="title" content="Aleena Siyad &amp; Siyad T N — Nikah Wedding Invitation" />
+  <meta name="description" content="Together with their families, Aleena Siyad and Siyad T N cordially invite you to celebrate their Nikah ceremony on Sunday, 13 December 2026." />
+  <meta name="author" content="found.bin" />
+
+  <!-- Open Graph / Facebook / WhatsApp Preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aleena-siyad-wedding.foundbin.com/" />
+  <meta property="og:title" content="Aleena Siyad &amp; Siyad T N — Nikah Wedding Invitation" />
+  <meta property="og:description" content="We cordially invite you to celebrate the Nikah of Aleena Siyad &amp; Siyad T N on Sunday, 13 December 2026 (04 Rajab 1448 AH)." />
+  <meta property="og:image" content="assets/gallery/gallery-suite.jpg" />
+  <meta property="og:image:alt" content="Aleena &amp; Siyad Wedding Invitation Suite" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Aleena Siyad &amp; Siyad T N — Nikah Wedding Invitation" />
+  <meta name="twitter:description" content="Nikah Ceremony &amp; Wedding Reception · Sunday, 13 December 2026." />
+  <meta name="twitter:image" content="assets/gallery/gallery-suite.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/favicon.svg" />
+
+  <!-- Google Fonts: Amiri (Arabic), Cormorant Garamond & Cinzel (Luxury Serif), Montserrat (Clean Body), Alex Brush (Script) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Configuration & Logic -->
+  <script src="config.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body class="is-intro-active">
+
+  <!-- Subtle Falling Rose Petals Layer -->
+  <div class="petal-canvas-layer" aria-hidden="true"></div>
+
+  <!-- Persistent Sticky Music Floating Controller -->
+  <aside class="floating-audio-dock" id="audioDock" aria-label="Audio controls">
+    <button type="button" class="audio-pill-btn" id="audioToggleBtn" aria-label="Play background music" aria-pressed="false">
+      <span class="audio-icon-wrap" aria-hidden="true">
+        <svg class="audio-note-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+          <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+        </svg>
+        <span class="audio-wave-bars">
+          <i></i><i></i><i></i>
+        </span>
+      </span>
+      <span class="audio-label" id="audioLabel">Play Ambience</span>
+    </button>
+    <audio id="weddingAudio" preload="auto" loop playsinline>
+      <source src="assets/wedding-ambient.wav" type="audio/wav" />
+      <source src="assets/wedding-audio.mp3" type="audio/mpeg" />
+    </audio>
+  </aside>
+
+  <!-- ===================================================================
+       1. CINEMATIC INVITATION OPENING SEQUENCE (THE ENVELOPE STAGE)
+       =================================================================== -->
+  <div class="envelope-intro-stage" id="envelopeIntroStage" role="dialog" aria-modal="true" aria-label="Wedding Invitation Envelope">
+    
+    <!-- Delicate Corner Botanicals -->
+    <div class="corner-botanical corner-top-left" aria-hidden="true">
+      <picture>
+        <source srcset="assets/floral-corner.webp" type="image/webp" />
+        <img src="assets/floral-corner.jpg" alt="" draggable="false" />
+      </picture>
+    </div>
+    <div class="corner-botanical corner-bottom-right" aria-hidden="true">
+      <picture>
+        <source srcset="assets/floral-corner.webp" type="image/webp" />
+        <img src="assets/floral-corner.jpg" alt="" draggable="false" />
+      </picture>
+    </div>
+
+    <!-- Intro Header Text -->
+    <header class="intro-header">
+      <p class="intro-kicker">IN THE NAME OF ALLAH · THE MOST MERCIFUL</p>
+      <p class="intro-supertitle">A WEDDING CELEBRATION</p>
+    </header>
+
+    <!-- 3D Envelope Composition Area -->
+    <div class="envelope-viewport" id="envelopeViewport">
+      
+      <!-- The Invitation Letter (Stationery Card inside) -->
+      <article class="letter-card" id="letterCard" aria-hidden="true">
+        <div class="card-inner-border">
+          <p class="letter-bismillah-ar" lang="ar">بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</p>
+          <p class="letter-tagline">TOGETHER WITH THEIR FAMILIES</p>
+          <h2 class="letter-names">
+            <span>Aleena</span>
+            <em class="letter-amp">&amp;</em>
+            <span>Siyad</span>
+          </h2>
+          <div class="card-gold-rule">
+            <span></span>✦<span></span>
+          </div>
+          <p class="letter-event">NIKAH CEREMONY</p>
+          <p class="letter-date">SUNDAY · 13 DECEMBER 2026</p>
+          <p class="letter-hijri">04 RAJAB 1448 AH</p>
+        </div>
+      </article>
+
+      <!-- The Dimensional Burgundy Envelope -->
+      <div class="envelope-3d" id="envelopeInteractive" role="button" tabindex="0" aria-label="Tap to open the wedding invitation">
+        
+        <!-- Outer Envelope Base & Realistic Shadow -->
+        <div class="env-shadow" aria-hidden="true"></div>
+        <div class="env-back" aria-hidden="true"></div>
+        
+        <!-- Inner Patterned Liner -->
+        <div class="env-liner" aria-hidden="true"></div>
+        
+        <!-- Lower Pocket Panels (Folded Flaps) -->
+        <div class="env-pocket-left" aria-hidden="true"></div>
+        <div class="env-pocket-right" aria-hidden="true"></div>
+        <div class="env-pocket-bottom" aria-hidden="true"></div>
+
+        <!-- Upper 3D Folding Flap -->
+        <div class="env-flap-hinge" id="envFlapHinge">
+          <div class="env-flap-outside" aria-hidden="true">
+            <span class="gold-piping"></span>
+          </div>
+          <div class="env-flap-inside" aria-hidden="true"></div>
+        </div>
+
+        <!-- Gold Wax Seal with Monogram "A & S" -->
+        <div class="wax-seal-wrapper" id="waxSealWrapper" aria-hidden="true">
+          <picture>
+            <source srcset="assets/wax-seal-gold.webp" type="image/webp" />
+            <img src="assets/wax-seal-gold.jpg" alt="A &amp; S Gold Wax Seal" class="wax-seal-img" draggable="false" />
+          </picture>
+        </div>
+
+      </div><!-- /.envelope-3d -->
+
+    </div><!-- /.envelope-viewport -->
+
+    <!-- Interactive Call-To-Action -->
+    <footer class="intro-footer">
+      <h1 class="intro-couple-names">Aleena Siyad <span>&amp;</span> Siyad T N</h1>
+      
+      <button type="button" class="cta-open-envelope" id="ctaOpenEnvelope">
+        <span class="cta-pulse-glow" aria-hidden="true"></span>
+        <span class="cta-text">OPEN YOUR INVITATION</span>
+        <svg class="cta-arrow" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </button>
+
+      <div class="intro-sub-actions">
+        <button type="button" class="skip-intro-btn" id="skipIntroBtn">Skip animation &rarr;</button>
+        <p class="intro-footnote">A blessed beginning, Insha'Allah</p>
+      </div>
+    </footer>
+
+  </div><!-- /.envelope-intro-stage -->
+
+
+  <!-- ===================================================================
+       2. MAIN WEDDING INVITATION EXPERIENCE
+       =================================================================== -->
+  <div class="main-page-wrapper" id="mainPageWrapper" aria-hidden="true">
+    
+    <!-- ==================== HERO SECTION ==================== -->
+    <header class="section-hero" id="home">
+      <!-- Fixed Seamless Paper Texture Background -->
+      <div class="paper-backdrop" aria-hidden="true"></div>
+      
+      <!-- Top Floral Accent -->
+      <div class="hero-floral-frame" aria-hidden="true">
+        <img src="assets/floral-divider.svg" alt="" class="floral-divider-top" />
+      </div>
+
+      <div class="hero-container reveal">
+        <!-- Arabic Bismillah Calligraphy -->
+        <div class="bismillah-wrapper">
+          <img src="assets/bismillah.svg" alt="Bismillahir Rahmanir Rahim in Arabic Calligraphy" class="bismillah-svg-img" />
+          <p class="bismillah-translation">“In the Name of Allah, the Most Beneficent, the Most Merciful.”</p>
+        </div>
+
+        <div class="gold-filigree-divider" aria-hidden="true">
+          <span></span><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><polygon points="12,2 15,9 22,12 15,15 12,22 9,15 2,12 9,9"/></svg><span></span>
+        </div>
+
+        <!-- Bride's Family Invitation Invitation Note -->
+        <p class="hero-eyebrow">TOGETHER WITH THEIR FAMILIES</p>
+        <p class="hero-invitation-lead">We cordially invite you to celebrate the Nikah of our beloved daughter</p>
+
+        <!-- Couple Name Typography -->
+        <div class="hero-couple-titles">
+          <h1 class="couple-title-bride">Aleena Siyad</h1>
+          <div class="couple-connector">
+            <span class="connector-line"></span>
+            <em class="connector-word">with</em>
+            <span class="connector-line"></span>
+          </div>
+          <h1 class="couple-title-groom">Siyad T N</h1>
+        </div>
+
+        <!-- Groom Family Subtext -->
+        <p class="hero-groom-lineage">
+          Son of <strong>Mr. Nazar T M &amp; Mrs. Jumailath</strong><br>
+          <span class="residence-text">Thankichira, CMC 33, Cherthala</span>
+        </p>
+
+        <p class="hero-inshallah">Insha'Allah</p>
+
+        <!-- Date & Hijri Pill Cards -->
+        <div class="hero-date-cluster">
+          <div class="date-tile">
+            <span class="tile-label">DATE</span>
+            <strong class="tile-main">13 DEC 2026</strong>
+            <span class="tile-sub">Sunday</span>
+          </div>
+          <div class="tile-separator" aria-hidden="true"></div>
+          <div class="date-tile">
+            <span class="tile-label">TIME</span>
+            <strong class="tile-main">11:00 AM</strong>
+            <span class="tile-sub">IST (Kerala)</span>
+          </div>
+          <div class="tile-separator" aria-hidden="true"></div>
+          <div class="date-tile">
+            <span class="tile-label">HIJRI DATE</span>
+            <strong class="tile-main">04 Rajab 1448</strong>
+            <span class="tile-sub">Islamic Calendar</span>
+          </div>
+        </div>
+
+        <!-- Call to Action Buttons -->
+        <div class="hero-action-buttons">
+          <a href="#events" class="btn btn-luxury-burgundy">
+            <span>View Wedding Schedule</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+          </a>
+          <button type="button" class="btn btn-luxury-gold" id="btnAddToCalendar">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <span>Add to Calendar</span>
+          </button>
+        </div>
+
+      </div><!-- /.hero-container -->
+
+      <!-- Scroll Down Cue -->
+      <div class="hero-scroll-cue" aria-hidden="true">
+        <span class="cue-text">SCROLL TO EXPLORE</span>
+        <span class="cue-arrow">&darr;</span>
+      </div>
+    </header>
+
+
+    <!-- ==================== FAMILY INTRODUCTION SECTION ==================== -->
+    <section class="section-family-lineage section-padding" id="families">
+      <div class="container-standard">
+        
+        <header class="section-header text-center reveal">
+          <p class="section-tag">WITH LOVE &amp; GRATITUDE</p>
+          <h2 class="section-title">The Families</h2>
+          <div class="title-ornament" aria-hidden="true">
+            <img src="assets/floral-divider.svg" alt="" />
+          </div>
+          <p class="section-description">
+            Honouring the roots, blessings, and generations that shaped this sacred union.
+          </p>
+        </header>
+
+        <div class="family-cards-grid">
+          
+          <!-- Bride's Family Card -->
+          <article class="family-card bride-family-card reveal">
+            <div class="card-crest" aria-hidden="true">
+              <span class="crest-letter">A</span>
+            </div>
+            <p class="family-card-kicker">BRIDE'S FAMILY</p>
+            <h3 class="family-names">Mr. Siyad Ommerkutty &amp;<br>Mrs. Shamla</h3>
+            <p class="family-home">Pozhiyil House, Kodamthuruth</p>
+            
+            <hr class="family-card-rule" />
+            
+            <div class="lineage-box">
+              <p class="lineage-title">With the loving memory and blessings of grandparents:</p>
+              <ul class="lineage-list">
+                <li>Granddaughter of <strong>Ms. Amina</strong> &amp; the late <strong>Abdul Karim</strong></li>
+                <li>Granddaughter of the late <strong>Beevi</strong> &amp; the late <strong>Ommerkutty</strong></li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Groom's Family Card -->
+          <article class="family-card groom-family-card reveal">
+            <div class="card-crest" aria-hidden="true">
+              <span class="crest-letter">S</span>
+            </div>
+            <p class="family-card-kicker">GROOM'S FAMILY</p>
+            <h3 class="family-names">Mr. Nazar T M &amp;<br>Mrs. Jumailath</h3>
+            <p class="family-home">Thankichira, CMC 33, Cherthala</p>
+            
+            <hr class="family-card-rule" />
+            
+            <div class="lineage-box">
+              <p class="lineage-title">With the prayers &amp; blessings of family:</p>
+              <p class="groom-blessing-note">
+                Cherishing the lifelong guidance, prayers, and deep affection of loved ones near and dear as we welcome our new daughter into our hearts.
+              </p>
+            </div>
+          </article>
+
+        </div><!-- /.family-cards-grid -->
+
+      </div><!-- /.container-standard -->
+    </section>
+
+
+    <!-- ==================== COUNTDOWN SECTION ==================== -->
+    <section class="section-countdown section-padding text-center" id="countdown">
+      <div class="container-standard">
+        
+        <div class="countdown-card reveal">
+          <p class="section-tag">COUNTING THE MOMENTS</p>
+          <h2 class="section-title">Until the Sacred Nikah</h2>
+          <p class="countdown-subtitle">
+            Sunday, 13 December 2026 &middot; 11:00 AM IST &middot; Kuthiathode Juma Masjid
+          </p>
+
+          <div class="countdown-grid" id="countdownGrid" aria-live="polite" aria-atomic="true">
+            <div class="time-block">
+              <span class="time-value" id="countDays">--</span>
+              <span class="time-label">DAYS</span>
+            </div>
+            <div class="time-colon" aria-hidden="true">:</div>
+            <div class="time-block">
+              <span class="time-value" id="countHours">--</span>
+              <span class="time-label">HOURS</span>
+            </div>
+            <div class="time-colon" aria-hidden="true">:</div>
+            <div class="time-block">
+              <span class="time-value" id="countMinutes">--</span>
+              <span class="time-label">MINUTES</span>
+            </div>
+            <div class="time-colon" aria-hidden="true">:</div>
+            <div class="time-block">
+              <span class="time-value" id="countSeconds">--</span>
+              <span class="time-label">SECONDS</span>
+            </div>
+          </div>
+
+          <p class="countdown-status-msg" id="countdownStatusMsg">
+            Calculating India Standard Time (Asia/Kolkata)...
+          </p>
+          
+          <div class="countdown-cta-row">
+            <a href="#rsvp" class="btn btn-luxury-burgundy">RSVP Your Attendance</a>
+          </div>
+        </div>
+
+      </div><!-- /.container-standard -->
+    </section>
+
+
+    <!-- ==================== SCHEDULE & VENUES ==================== -->
+    <section class="section-events section-padding" id="events">
+      <div class="container-standard">
+        
+        <header class="section-header text-center reveal">
+          <p class="section-tag">SAVE THE DATE</p>
+          <h2 class="section-title">Celebration Schedule</h2>
+          <div class="title-ornament" aria-hidden="true">
+            <img src="assets/floral-divider.svg" alt="" />
+          </div>
+          <p class="section-description">
+            We look forward to celebrating each special milestone of this joyous day with you.
+          </p>
+        </header>
+
+        <div class="events-timeline-grid">
+          
+          <!-- Event 1: Nikah Ceremony -->
+          <article class="event-detail-card reveal">
+            <div class="event-badge confirmed-badge">CONFIRMED</div>
+            <div class="event-icon-circle" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <p class="event-category">THE SACRED UNION</p>
+            <h3 class="event-name">Nikah Ceremony</h3>
+            
+            <div class="event-meta-rows">
+              <div class="meta-row">
+                <span class="meta-icon" aria-hidden="true">🗓</span>
+                <span class="meta-text">Sunday, 13 December 2026 (04 Rajab 1448)</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-icon" aria-hidden="true">⏰</span>
+                <span class="meta-text"><strong>11:00 AM IST</strong></span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-icon" aria-hidden="true">📍</span>
+                <div class="meta-location">
+                  <strong>Kuthiathode Juma Masjid</strong>
+                  <span>Kuthiathode, Alappuzha, Kerala</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="event-summary">
+              The solemn Islamic marriage contract and prayers, surrounded by family, elders, and loved ones.
+            </p>
+
+            <div class="event-actions">
+              <a href="https://www.google.com/maps/search/?api=1&query=Kuthiathode+Juma+Masjid+Alappuzha+Kerala" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="btn btn-card-map">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Get Directions (Google Maps)</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Event 2: Wedding Reception -->
+          <article class="event-detail-card reveal">
+            <div class="event-badge pending-badge">TIME TO BE CONFIRMED</div>
+            <div class="event-icon-circle" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z"/>
+                <path d="M12 7v5l3 3"/>
+              </svg>
+            </div>
+            <p class="event-category">THE CELEBRATION</p>
+            <h3 class="event-name">Wedding Reception</h3>
+            
+            <div class="event-meta-rows">
+              <div class="meta-row">
+                <span class="meta-icon" aria-hidden="true">🗓</span>
+                <span class="meta-text">Sunday, 13 December 2026</span>
+              </div>
+              <div class="meta-row highlight-pending">
+                <span class="meta-icon" aria-hidden="true">⏰</span>
+                <span class="meta-text"><strong>Time to be confirmed</strong></span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-icon" aria-hidden="true">📍</span>
+                <div class="meta-location">
+                  <strong>The Palace Convention Centre</strong>
+                  <span>Chandiroor, Alappuzha, Kerala</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="event-summary">
+              A festive gathering of dinner, greetings, and celebration with family and friends.
+            </p>
+
+            <div class="event-actions">
+              <a href="https://www.google.com/maps/search/?api=1&query=The+Palace+Convention+Centre+Chandiroor+Kerala" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="btn btn-card-map">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Get Directions (Google Maps)</span>
+              </a>
+            </div>
+          </article>
+
+        </div><!-- /.events-timeline-grid -->
+
+        <p class="schedule-notice text-center">
+          <em>Note:</em> The reception schedule will be finalized and confirmed with guests prior to the wedding date.
+        </p>
+
+      </div><!-- /.container-standard -->
+    </section>
+
+
+    <!-- ==================== GALLERY / ARTWORK SECTION ==================== -->
+    <section class="section-gallery section-padding" id="gallery">
+      <div class="container-standard">
+        
+        <header class="section-header text-center reveal">
+          <p class="section-tag">MOMENTS &amp; ELEGANCE</p>
+          <h2 class="section-title">Invitation Highlights</h2>
+          <div class="title-ornament" aria-hidden="true">
+            <img src="assets/floral-divider.svg" alt="" />
+          </div>
+          <p class="section-description">
+            A glimpse into the thoughtful aesthetics and romantic botanical touches of this celebration.
+          </p>
+        </header>
+
+        <div class="gallery-grid">
+          
+          <figure class="gallery-card reveal">
+            <picture>
+              <source srcset="assets/gallery/gallery-suite.webp" type="image/webp" />
+              <img src="assets/gallery/gallery-suite.jpg" alt="Artisan Wedding Stationery Suite with Wax Seal" loading="lazy" />
+            </picture>
+            <figcaption>
+              <span class="caption-tag">STATIONERY</span>
+              <h4>Artisan Wedding Suite &amp; Wax Seal</h4>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-card reveal">
+            <picture>
+              <source srcset="assets/gallery/gallery-florals.webp" type="image/webp" />
+              <img src="assets/gallery/gallery-florals.jpg" alt="Romantic Burgundy Floral Arrangements with Candlelight" loading="lazy" />
+            </picture>
+            <figcaption>
+              <span class="caption-tag">BOTANICALS</span>
+              <h4>Burgundy Roses &amp; Candlelight Ambience</h4>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-card reveal">
+            <picture>
+              <source srcset="assets/gallery/gallery-stationery.webp" type="image/webp" />
+              <img src="assets/gallery/gallery-stationery.jpg" alt="Deckle Edge Cotton Rag Wedding Invitation" loading="lazy" />
+            </picture>
+            <figcaption>
+              <span class="caption-tag">CRAFTSMANSHIP</span>
+              <h4>Deckle Edge Paper Craftsmanship</h4>
+            </figcaption>
+          </figure>
+
+        </div><!-- /.gallery-grid -->
+
+        <p class="gallery-note text-center">
+          Family and couple photo memories will be updated here as the wedding day approaches.
+        </p>
+
+      </div><!-- /.container-standard -->
+    </section>
+
+
+    <!-- ==================== RSVP SECTION ==================== -->
+    <section class="section-rsvp section-padding" id="rsvp">
+      <div class="container-standard">
+        
+        <div class="rsvp-card-wrapper reveal">
+          <header class="rsvp-header text-center">
+            <p class="section-tag">KINDLY REPLY</p>
+            <h2 class="section-title">Will You Join Us?</h2>
+            <div class="title-ornament" aria-hidden="true">
+              <img src="assets/floral-divider.svg" alt="" />
+            </div>
+            <p class="rsvp-lead">
+              Your prayers, warm smiles, and presence will make our union truly blessed.<br>
+              Please send your RSVP to the family via WhatsApp.
+            </p>
+          </header>
+
+          <form id="rsvpForm" class="luxury-form" novalidate>
+            
+            <div class="form-group">
+              <label for="guestName">Your Full Name <span class="required-star">*</span></label>
+              <input type="text" id="guestName" name="guestName" placeholder="e.g. Dr. Haris &amp; Family" required autocomplete="name" />
+            </div>
+
+            <div class="form-row-duo">
+              <div class="form-group">
+                <label for="rsvpAttendance">Your Attendance <span class="required-star">*</span></label>
+                <select id="rsvpAttendance" name="attendance" required>
+                  <option value="Joyfully accepts">✨ Joyfully accepts</option>
+                  <option value="Regretfully declines">💌 Regretfully declines</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="guestCount">Total Number of Guests</label>
+                <select id="guestCount" name="guestCount">
+                  <option value="1">1 Guest</option>
+                  <option value="2" selected>2 Guests</option>
+                  <option value="3">3 Guests</option>
+                  <option value="4">4 Guests</option>
+                  <option value="5">5 Guests</option>
+                  <option value="6+">6 or more Guests</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="guestMessage">Dua / Warm Wishes for Aleena &amp; Siyad (Optional)</label>
+              <textarea id="guestMessage" name="message" rows="3" placeholder="Write a warm dua or blessing for the couple..."></textarea>
+            </div>
+
+            <div class="form-submit-row">
+              <button type="submit" class="btn btn-luxury-burgundy btn-block" id="btnSendRsvp">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                  <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.41a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.64c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.07-.39-2.03-1.25-.75-.67-1.26-1.5-1.4-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1s.9 2.44 1.03 2.61c.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.29z"/>
+                </svg>
+                <span>Send RSVP via WhatsApp</span>
+              </button>
+            </div>
+
+            <p class="form-disclaimer text-center">
+              WhatsApp will open with your customized message. <strong>Please tap Send in WhatsApp to complete your RSVP.</strong>
+            </p>
+
+          </form>
+
+        </div><!-- /.rsvp-card-wrapper -->
+
+      </div><!-- /.container-standard -->
+    </section>
+
+
+    <!-- ==================== SHARE & CALENDAR BAR ==================== -->
+    <section class="section-sharing section-padding" id="share">
+      <div class="container-standard text-center reveal">
+        
+        <p class="section-tag">SPREAD THE JOY</p>
+        <h2 class="section-title">Share this Invitation</h2>
+        <p class="sharing-subtitle">
+          Pass along the celebration details with relatives, loved ones, and friends.
+        </p>
+
+        <div class="sharing-button-group">
+          
+          <button type="button" class="btn btn-luxury-burgundy" id="btnShareNative">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+            <span>Share Invitation</span>
+          </button>
+
+          <button type="button" class="btn btn-luxury-gold" id="btnCopyLink">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            <span>Copy Link</span>
+          </button>
+
+          <a href="#" class="btn btn-whatsapp-direct" id="btnShareWhatsApp" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.41a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.64c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.07-.39-2.03-1.25-.75-.67-1.26-1.5-1.4-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1s.9 2.44 1.03 2.61c.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.29z"/></svg>
+            <span>WhatsApp Share</span>
+          </a>
+
+        </div>
+
+      </div><!-- /.container-standard -->
+    </section>
+
+
+    <!-- ==================== CLOSING & BLESSINGS SECTION ==================== -->
+    <section class="section-closing text-center reveal">
+      <div class="closing-overlay" aria-hidden="true"></div>
+      
+      <div class="container-standard closing-content">
+        <div class="closing-crest" aria-hidden="true">
+          <img src="assets/wax-seal.svg" alt="" width="72" height="72" />
+        </div>
+
+        <p class="closing-arabic-dua" lang="ar">
+          بَارَكَ اللَّهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ
+        </p>
+
+        <p class="closing-dua-english">
+          “May Allah bless this union with love, mercy, and barakah.”
+        </p>
+
+        <h2 class="closing-couple-names">Aleena Siyad <span>&amp;</span> Siyad T N</h2>
+        
+        <p class="closing-signoff">
+          Best wishes, Dear &amp; Near
+        </p>
+
+        <div class="closing-date-badge">
+          13 December 2026 &middot; Kuthiathode Juma Masjid
+        </div>
+
+      </div><!-- /.container-standard -->
+    </section>
+
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer text-center">
+      <p class="footer-copy">
+        Crafted with love for <strong>Aleena &amp; Siyad</strong> &middot; <span id="footerYear">2026</span>
+      </p>
+      <p class="footer-studio">
+        Designed by <a href="https://instagram.com/found.bin" target="_blank" rel="noopener noreferrer">found.bin</a> &middot; Bespoke Wedding Invitation Studio
+      </p>
+    </footer>
+
+  </div><!-- /.main-page-wrapper -->
+
+
+  <!-- Interactive Toast Notification -->
+  <div class="toast-notification" id="toastNotification" role="status" aria-live="polite">
+    Link copied to clipboard!
+  </div>
+
+</body>
+</html>
