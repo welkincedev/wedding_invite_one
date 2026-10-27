@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { weddingConfig } from "@/data/weddingConfig";
+import { weddingConfig, assetPath } from "@/data/weddingConfig";
 import { Calendar, ChevronDown } from "lucide-react";
 
 interface HeroProps {
@@ -21,7 +21,7 @@ export default function Hero({ onAddToCalendar }: HeroProps) {
         aria-hidden="true"
       >
         <img
-          src="/assets/sage-divider.svg"
+          src={assetPath("/assets/sage-divider.svg")}
           alt=""
           className="w-full h-auto"
         />
@@ -37,7 +37,7 @@ export default function Hero({ onAddToCalendar }: HeroProps) {
         >
           <div className="max-w-[300px] sm:max-w-[350px] mx-auto mb-1.5">
             <img
-              src="/assets/bismillah-sage.svg"
+              src={assetPath("/assets/bismillah-sage.svg")}
               alt="Bismillahir Rahmanir Rahim in Arabic Calligraphy"
               className="w-full h-auto drop-shadow-sm"
             />

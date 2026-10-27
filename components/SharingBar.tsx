@@ -63,9 +63,12 @@ export default function SharingBar({ onShowToast, onAddToCalendar }: SharingBarP
   };
 
   const shareText = `You are cordially invited to celebrate the Nikah of ${bride.fullName} & ${groom.fullName} on Sunday, 13 December 2026.`;
-  const whatsappShareUrl = typeof window !== "undefined" 
-    ? `https://wa.me/?text=${encodeURIComponent(shareText + "\n\n" + window.location.href)}`
-    : "#";
+
+  const handleWhatsAppShare = () => {
+    if (typeof window === "undefined") return;
+    const url = `https://wa.me/?text=${encodeURIComponent(shareText + "\n\n" + window.location.href)}`;
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
 
   return (
     <section className="section-padding text-center" id="share">
@@ -112,15 +115,14 @@ export default function SharingBar({ onShowToast, onAddToCalendar }: SharingBarP
               <span>Copy Link</span>
             </button>
 
-            <a
-              href={whatsappShareUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              type="button"
+              onClick={handleWhatsAppShare}
               className="btn bg-[#25d366] text-white hover:bg-[#20bd5a] border border-[#1ebc59] shadow-sm hover:shadow-md"
             >
               <Send className="w-4 h-4" />
               <span>WhatsApp Share</span>
-            </a>
+            </button>
 
             <button
               type="button"

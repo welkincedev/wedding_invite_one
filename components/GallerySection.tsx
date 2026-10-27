@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { assetPath } from "@/data/weddingConfig";
 
 export default function GallerySection() {
   const highlights = [
@@ -9,21 +10,21 @@ export default function GallerySection() {
       id: "suite",
       title: "Artisan Wedding Suite & Wax Seal",
       category: "STATIONERY",
-      src: "/assets/gallery/gallery-suite.webp",
+      src: assetPath("/assets/gallery/gallery-suite.webp"),
       alt: "Fine Art Wedding Invitation Suite with Gold Script and Wax Seal"
     },
     {
       id: "florals",
       title: "Sage Botanicals & Candlelight Ambience",
       category: "BOTANICALS",
-      src: "/assets/gallery/gallery-florals.webp",
+      src: assetPath("/assets/gallery/gallery-florals.webp"),
       alt: "Romantic Sage Botanicals and Candlelight Wedding Decor"
     },
     {
       id: "paper",
       title: "Deckle Edge Paper Craftsmanship",
       category: "CRAFTSMANSHIP",
-      src: "/assets/gallery/gallery-stationery.webp",
+      src: assetPath("/assets/gallery/gallery-stationery.webp"),
       alt: "Handmade Deckle Edge Cotton Paper Wedding Stationery"
     }
   ];
@@ -53,7 +54,7 @@ export default function GallerySection() {
           </h2>
           <div className="w-48 mx-auto my-3 opacity-90">
             <img
-              src="/assets/sage-divider.svg"
+              src={assetPath("/assets/sage-divider.svg")}
               alt=""
               className="w-full h-auto"
             />

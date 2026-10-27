@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { weddingConfig } from "@/data/weddingConfig";
+import { weddingConfig, assetPath } from "@/data/weddingConfig";
 import { MapPin, Calendar, Clock, ExternalLink } from "lucide-react";
 
 export default function ScheduleSection() {
@@ -33,7 +33,7 @@ export default function ScheduleSection() {
           </h2>
           <div className="w-48 mx-auto my-3 opacity-90" aria-hidden="true">
             <img
-              src="/assets/sage-divider.svg"
+              src={assetPath("/assets/sage-divider.svg")}
               alt=""
               className="w-full h-auto"
             />

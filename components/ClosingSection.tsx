@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { weddingConfig } from "@/data/weddingConfig";
+import { weddingConfig, assetPath } from "@/data/weddingConfig";
 
 export default function ClosingSection() {
   const currentYear = new Date().getFullYear();
@@ -14,7 +14,7 @@ export default function ClosingSection() {
         <div
           className="absolute inset-0 opacity-[0.05] pointer-events-none"
           style={{
-            backgroundImage: "url('/assets/islamic-pattern.svg')",
+            backgroundImage: `url('${assetPath("/assets/islamic-pattern.svg")}')`,
             backgroundSize: "80px 80px"
           }}
           aria-hidden="true"
@@ -30,7 +30,7 @@ export default function ClosingSection() {
           {/* Sage Monogram Crest */}
           <div className="w-16 h-16 sm:w-20 sm:h-20 mb-5 sm:mb-6 drop-shadow-lg">
             <img
-              src="/assets/sage-monogram-crest.svg"
+              src={assetPath("/assets/sage-monogram-crest.svg")}
               alt="Aleena & Siyad Monogram Crest"
               className="w-full h-full object-contain"
             />

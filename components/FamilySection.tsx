@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { weddingConfig } from "@/data/weddingConfig";
+import { weddingConfig, assetPath } from "@/data/weddingConfig";
 
 export default function FamilySection() {
   const { bride, groom } = weddingConfig.couple;
@@ -32,7 +32,7 @@ export default function FamilySection() {
           </h2>
           <div className="w-48 mx-auto my-2 opacity-90">
             <img
-              src="/assets/sage-divider.svg"
+              src={assetPath("/assets/sage-divider.svg")}
               alt=""
               className="w-full h-auto"
             />
@@ -46,10 +46,10 @@ export default function FamilySection() {
         <div className="max-w-[880px] mx-auto bg-[#FFFEFA]/90 border border-[#C6AD76]/35 rounded-2xl p-6 sm:p-12 shadow-sm relative overflow-hidden">
           {/* Subtle Corner Botanical Accents */}
           <div className="absolute -top-3 -left-3 w-28 opacity-35 pointer-events-none">
-            <img src="/assets/sage-botanical-corner.svg" alt="" />
+            <img src={assetPath("/assets/sage-botanical-corner.svg")} alt="" />
           </div>
           <div className="absolute -bottom-3 -right-3 w-28 opacity-35 pointer-events-none rotate-180">
-            <img src="/assets/sage-botanical-corner.svg" alt="" />
+            <img src={assetPath("/assets/sage-botanical-corner.svg")} alt="" />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 relative z-10">

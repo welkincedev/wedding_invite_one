@@ -20,6 +20,23 @@ export interface ThemeTokens {
   whitePaper: string;
 }
 
+export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
+export function assetPath(path: string): string {
+  if (!path) return "";
+  if (path.startsWith("http://") || path.startsWith("https://") || path.startsWith("data:")) {
+    return path;
+  }
+  const clean = path.startsWith("/") ? path : `/${path}`;
+  if (!BASE_PATH) {
+    return clean;
+  }
+  if (clean === BASE_PATH || clean.startsWith(`${BASE_PATH}/`)) {
+    return clean;
+  }
+  return `${BASE_PATH}${clean}`;
+}
+
 export interface FamilyDetails {
   parents: string;
   residence: string;
@@ -153,7 +170,7 @@ export const weddingConfig: WeddingConfig = {
       id: "nikah",
       category: "THE NIKAH",
       title: "Nikah Ceremony",
-      imageSrc: "/assets/events/event-nikah.jpg",
+      imageSrc: assetPath("/assets/events/event-nikah.jpg"),
       imageAlt: "Atmospheric architectural view of an elegant Islamic arched courtyard with morning sunlight and sage florals",
       imageCaption: "Ceremony Ambiance",
       dateDisplay: "Sunday, 13 December 2026",
@@ -169,7 +186,7 @@ export const weddingConfig: WeddingConfig = {
       id: "reception",
       category: "THE RECEPTION",
       title: "Wedding Reception",
-      imageSrc: "/assets/events/event-reception.jpg",
+      imageSrc: assetPath("/assets/events/event-reception.jpg"),
       imageAlt: "Atmospheric view of an elegant candlelit wedding banquet hall adorned with sage botanicals and champagne gold accents",
       imageCaption: "Celebration Ambiance",
       // Unconfirmed: Date & time not invented per strict project instructions
@@ -190,8 +207,8 @@ export const weddingConfig: WeddingConfig = {
   },
   audio: {
     title: "Gentle Wedding Ambience",
-    src: "/assets/wedding-ambient.wav",
-    fallbackSrc: "/assets/wedding-audio.mp3"
+    src: assetPath("/assets/wedding-ambient.wav"),
+    fallbackSrc: assetPath("/assets/wedding-audio.mp3")
   },
   brand: {
     name: "found.bin",

@@ -2,7 +2,7 @@
 
 import React, { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { weddingConfig } from "@/data/weddingConfig";
+import { weddingConfig, assetPath } from "@/data/weddingConfig";
 import {
   CheckCircle2,
   HelpCircle,
@@ -147,7 +147,7 @@ export default function RsvpSection({ onShowToast }: RsvpSectionProps) {
             </h2>
             <div className="w-44 sm:w-48 mx-auto my-3 opacity-85" aria-hidden="true">
               <img
-                src="/assets/sage-divider.svg"
+                src={assetPath("/assets/sage-divider.svg")}
                 alt=""
                 className="w-full h-auto"
               />

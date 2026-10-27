@@ -2,7 +2,7 @@
 
 import React, { useRef, useState, useEffect } from "react";
 import gsap from "gsap";
-import { weddingConfig } from "@/data/weddingConfig";
+import { weddingConfig, assetPath } from "@/data/weddingConfig";
 import { ArrowRight, Sparkles } from "lucide-react";
 
 interface FoldedIntroProps {
@@ -140,7 +140,7 @@ export default function EnvelopeIntro({ onOpened, isOpen }: FoldedIntroProps) {
         aria-hidden="true"
       >
         <img
-          src="/assets/sage-botanical-corner.svg"
+          src={assetPath("/assets/sage-botanical-corner.svg")}
           alt=""
           className="w-full h-auto drop-shadow-sm"
         />
@@ -150,7 +150,7 @@ export default function EnvelopeIntro({ onOpened, isOpen }: FoldedIntroProps) {
         aria-hidden="true"
       >
         <img
-          src="/assets/sage-botanical-corner.svg"
+          src={assetPath("/assets/sage-botanical-corner.svg")}
           alt=""
           className="w-full h-auto drop-shadow-sm"
         />
@@ -280,7 +280,7 @@ export default function EnvelopeIntro({ onOpened, isOpen }: FoldedIntroProps) {
             {/* Fine Inner Foil Border */}
             <div className="absolute inset-2 border border-[#C6AD76]/40 rounded-l pointer-events-none" />
             <div className="w-12 opacity-80">
-              <img src="/assets/sage-botanical-corner.svg" alt="" />
+              <img src={assetPath("/assets/sage-botanical-corner.svg")} alt="" />
             </div>
             <div className="text-left z-10 pl-1">
               <span
@@ -308,7 +308,7 @@ export default function EnvelopeIntro({ onOpened, isOpen }: FoldedIntroProps) {
             {/* Fine Inner Foil Border */}
             <div className="absolute inset-2 border border-[#C6AD76]/40 rounded-r pointer-events-none" />
             <div className="w-12 opacity-80 rotate-90">
-              <img src="/assets/sage-botanical-corner.svg" alt="" />
+              <img src={assetPath("/assets/sage-botanical-corner.svg")} alt="" />
             </div>
             <div className="text-right z-10 pr-1">
               <span
@@ -327,7 +327,7 @@ export default function EnvelopeIntro({ onOpened, isOpen }: FoldedIntroProps) {
             aria-hidden="true"
           >
             <img
-              src="/assets/sage-monogram-crest.svg"
+              src={assetPath("/assets/sage-monogram-crest.svg")}
               alt="Aleena and Siyad Crest"
               className="w-full h-full object-contain"
             />
